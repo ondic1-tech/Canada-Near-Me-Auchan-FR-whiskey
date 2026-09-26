@@ -1,0 +1,54 @@
+{
+  "title": "Canada Near Me — Sam Barton whisky in France",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "cities": {
+      "title": "Cities",
+      "type": "string",
+      "description": "Optional city names, one per line. Empty means French cities are loaded automatically.",
+      "editor": "textarea",
+      "default": ""
+    },
+    "minPopulation": {
+      "title": "Minimum city population",
+      "type": "integer",
+      "description": "Minimum population when cities are loaded automatically.",
+      "editor": "number",
+      "default": 20000,
+      "minimum": 1000
+    },
+    "maxCities": {
+      "title": "Maximum cities",
+      "type": "integer",
+      "description": "Maximum number of cities checked during one run.",
+      "editor": "number",
+      "default": 150,
+      "minimum": 1
+    },
+    "maxStoresPerCityToCheck": {
+      "title": "Stores checked per city",
+      "type": "integer",
+      "description": "Maximum candidate stores tested before the city is skipped.",
+      "editor": "number",
+      "default": 4,
+      "minimum": 1,
+      "maximum": 20
+    },
+    "maxOutputRows": {
+      "title": "Maximum output rows",
+      "type": "integer",
+      "description": "Hard limit for dataset rows.",
+      "editor": "number",
+      "default": 200,
+      "minimum": 1
+    },
+    "useApifyProxy": {
+      "title": "Use Apify Proxy",
+      "type": "boolean",
+      "description": "Enable if Courses U blocks the Actor IP address.",
+      "editor": "checkbox",
+      "default": false
+    }
+  }
+}
