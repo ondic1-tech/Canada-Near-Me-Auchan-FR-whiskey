@@ -1,0 +1,15 @@
+{
+  "name": "canada-near-me-coursesu-fr-sam-barton",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "apify": "^3.7.2",
+    "crawlee": "^3.16.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
